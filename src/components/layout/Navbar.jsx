@@ -35,11 +35,11 @@ export default function Navbar() {
         logoAlt="Novia AI"
         items={NAV_ITEMS}
         activeHref={activeHref}
-        baseColor="rgba(23,43,54,0.4)"
-        pillColor="var(--color-surface)"
-        pillTextColor="var(--color-text)"
-        hoveredPillTextColor="var(--color-primary)"
-        className="backdrop-blur-2xl border border-[var(--color-border)] py-2.5 px-4 rounded-full mx-auto shadow-2xl bg-[#172B36]/30"
+        baseColor="rgba(255,255,255,0.05)"
+        pillColor="rgba(255,255,255,0.1)"
+        pillTextColor="rgba(255,255,255,0.7)"
+        hoveredPillTextColor="#FFFFFF"
+        className="backdrop-blur-xl border border-white/10 py-2.5 px-4 rounded-full mx-auto shadow-2xl bg-black/20"
         rightNode={rightNode}
       />
     </header>

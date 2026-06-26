@@ -4,6 +4,7 @@ import Hero from '../components/hero/Hero';
 import Companies from '../components/companies/Companies';
 import FeaturesSection from '../components/features/FeaturesSection';
 import ProductShowcase from '../components/showcase/ProductShowcase';
+import PricingSection from '../components/pricing/PricingSection';
 
 import Testimonials from '../components/testimonials/Testimonials';
 import CTA from '../components/cta/CTA';
@@ -23,6 +24,7 @@ export default function Home() {
         <Companies />
         <FeaturesSection />
         <ProductShowcase />
+        <PricingSection />
         <Testimonials />
         <CTA />
         <section

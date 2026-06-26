@@ -4,9 +4,9 @@ export const FEATURES = [
   {
     id: 0,
     icon: 'search',
-    title: 'AI-Powered Data Discovery',
+    title: 'Matrix-Driven Pricing & Performance-Isolated Currency Switcher',
     description:
-      'Automatically surface hidden patterns across petabytes of structured and unstructured data with zero manual tagging.',
+      '→The Blueprint: A pricing tier component that toggles between Monthly and Annual billing cycles across three currencies: INR (₹), USD ($), and EUR (€).\n\n→The Data Logic: You must compute the final values dynamically using a multi-dimensional configuration object/matrix that factors in a base tier rate, a flat 20% annual discount multiplier, and regional tariff variables.',
     size: 'large',
   },
   {
