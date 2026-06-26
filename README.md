@@ -1,73 +1,301 @@
-# Novia AI
+<div align="center">
 
-**One platform. Every data workflow.**
+# 🚀 Novia AI
 
-Novia AI is a modern, high-performance web application designed for data teams. It provides a beautiful, state-of-the-art interface for showcasing AI-powered data discovery, pipeline management, and analytics features. Built with a focus on immersive aesthetics and fluid user experiences, Novia AI leverages the latest in web animation and 3D rendering.
+### One Platform. Every Data Workflow.
 
-## 🚀 Features
+A modern AI-powered data platform with immersive UI, fluid animations, and high-performance WebGL experiences.
 
-- **Immersive 3D Backgrounds:** Utilizes `ogl` to render lightweight, performant WebGL background layers that react to the user's presence.
-- **Fluid Animations:** Powered by `gsap` and `animejs` for buttery-smooth page transitions, custom scrollbars, and interactive micro-animations.
-- **Native CSS Stacking:** Features a pure CSS-based parallax stacking effect for feature cards, ensuring zero-jank scrolling and perfect rendering on all browsers.
-- **Smooth Scrolling:** Integrated with `lenis` for a luxurious, momentum-based scrolling experience.
-- **Modern UI Design:** Built with **Tailwind CSS v4** and customized with a rich, dark-themed design system featuring glassmorphism, dynamic gradients, and precision typography.
-- **Responsive Layouts:** Fully optimized for mobile, tablet, and desktop viewports with a highly interactive Bento Grid and Accordion fallback.
+![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react)
+![Vite](https://img.shields.io/badge/Vite-7-646CFF?style=for-the-badge&logo=vite)
+![TailwindCSS](https://img.shields.io/badge/Tailwind-v4-38BDF8?style=for-the-badge&logo=tailwindcss)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
-## 🛠️ Technology Stack
+</div>
 
-- **Framework:** [React 19](https://react.dev/)
-- **Build Tool:** [Vite](https://vitejs.dev/)
-- **Styling:** [Tailwind CSS v4](https://tailwindcss.com/)
-- **Animations:** 
-  - [Anime.js (v4)](https://animejs.com/) for lightweight scroll timelines
-  - [GSAP](https://gsap.com/) for complex sequencing
-- **3D Graphics:** [OGL](https://github.com/oframe/ogl) for WebGL rendering
-- **Scroll Engine:** [Lenis](https://lenis.studiofreight.com/)
+---
 
-## 📦 Getting Started
+## ✨ Overview
 
-### Prerequisites
+**Novia AI** is a next-generation AI SaaS landing page built to showcase intelligent data platforms with premium visuals, immersive interactions, and exceptional performance.
 
-Ensure you have [Node.js](https://nodejs.org/) installed on your machine.
+Designed with a **mobile-first** approach, Novia AI combines elegant UI, modern animations, and lightweight WebGL rendering to deliver a seamless experience across desktop, tablet, and mobile devices.
 
-### Installation
+Whether you're building an AI startup, analytics platform, or enterprise SaaS product, Novia AI provides a polished foundation that is fast, scalable, and visually engaging.
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/novia-ai.git
-   cd novia-ai
-   ```
+---
 
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
+# 🌟 Features
 
-3. Start the development server:
-   ```bash
-   npm run dev
-   ```
+### 🎨 Premium UI
 
-4. Open your browser and navigate to `http://localhost:5173`.
+- Modern glassmorphism design
+- Dynamic gradients
+- Clean typography
+- Dark theme
+- Fully responsive layouts
 
-## 🏗️ Building for Production
+---
 
-To create a production-ready build, run:
+### ⚡ Smooth Animations
+
+- GSAP-powered page transitions
+- Anime.js micro-interactions
+- Smooth scrolling with Lenis
+- Hardware-accelerated animations
+- Optimized for 60 FPS
+
+---
+
+### 🌌 Interactive WebGL
+
+- Lightweight 3D backgrounds using OGL
+- GPU-accelerated rendering
+- Responsive visual effects
+- Optimized for performance
+
+---
+
+### 📱 Responsive Design
+
+Built with a mobile-first approach.
+
+Supports:
+
+- 📱 Mobile
+- 📲 Tablets
+- 💻 Laptops
+- 🖥️ Desktop
+- 🖥️ Ultrawide Displays
+
+No horizontal scrolling.
+
+Adaptive layouts across all screen sizes.
+
+---
+
+### 🚀 Performance Optimized
+
+- Lightning-fast Vite bundling
+- Lazy-loaded assets
+- Optimized rendering
+- Responsive typography
+- Minimal layout shifts
+
+---
+
+### 🎯 User Experience
+
+- Smooth navigation
+- Accessible components
+- Interactive Bento Grid
+- Accordion mobile layouts
+- Fluid hover effects
+- Scroll-based storytelling
+
+---
+
+# 🛠 Tech Stack
+
+| Category | Technology |
+|----------|------------|
+| Framework | React 19 |
+| Build Tool | Vite |
+| Styling | Tailwind CSS v4 |
+| Animation | GSAP |
+| Motion | Anime.js v4 |
+| 3D Graphics | OGL |
+| Smooth Scroll | Lenis |
+| Language | JavaScript (ESNext) |
+
+---
+
+# 📂 Project Structure
+
+```text
+src/
+│
+├── assets/
+├── components/
+├── sections/
+├── hooks/
+├── styles/
+├── utils/
+├── App.jsx
+└── main.jsx
+```
+
+---
+
+# 🚀 Getting Started
+
+## Prerequisites
+
+- Node.js 20+
+- npm
+
+---
+
+## Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/yourusername/novia-ai.git
+```
+
+Navigate into the project
+
+```bash
+cd novia-ai
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Start the development server
+
+```bash
+npm run dev
+```
+
+Visit
+
+```
+http://localhost:5173
+```
+
+---
+
+# 📦 Production Build
+
+Create an optimized production build
+
 ```bash
 npm run build
 ```
-The optimized assets will be generated in the `dist` folder. You can preview the production build locally using:
+
+Preview locally
+
 ```bash
 npm run preview
 ```
 
-## 🎨 Design System
+---
 
-Novia AI uses a carefully curated CSS custom property design system (`src/styles/globals.css`) that extends Tailwind CSS. 
-- **Colors:** Deep teal/slate backgrounds (`#172B36`, `#114C5A`) with vibrant amber/orange accents (`#FFC801`, `#FF9932`).
-- **Typography:** Inter (body text) and JetBrains Mono (display text).
-- **Aesthetics:** Heavy use of backdrop-filters (glassmorphism), radial gradients, and fluid typography clamps.
+# 🎨 Design System
 
-## 📄 License
+Novia AI uses a custom design system built on top of Tailwind CSS.
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+### Colors
+
+- Deep Slate
+- Ocean Teal
+- Amber
+- Orange Accents
+
+### Typography
+
+- Inter
+- JetBrains Mono
+
+### Visual Style
+
+- Glassmorphism
+- Soft Shadows
+- Radial Gradients
+- Fluid Typography
+- Responsive Spacing
+- Modern Cards
+
+---
+
+# 📱 Responsive Support
+
+Optimized for
+
+- iPhone SE
+- iPhone 15
+- Pixel Devices
+- Samsung Galaxy
+- iPad
+- MacBook
+- Windows Laptops
+- 4K Displays
+
+---
+
+# ⚡ Performance
+
+✔ Mobile-first architecture
+
+✔ Optimized WebGL rendering
+
+✔ Lazy loading
+
+✔ Responsive images
+
+✔ Smooth scrolling
+
+✔ GPU accelerated animations
+
+✔ Minimal layout shift
+
+✔ Fast page rendering
+
+---
+
+# ♿ Accessibility
+
+- Semantic HTML
+- Keyboard navigation
+- ARIA support
+- WCAG-friendly contrast
+- Reduced motion support
+- Focus indicators
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repository
+2. Create a new feature branch
+
+```bash
+git checkout -b feature/amazing-feature
+```
+
+3. Commit your changes
+
+```bash
+git commit -m "Add amazing feature"
+```
+
+4. Push to GitHub
+
+```bash
+git push origin feature/amazing-feature
+```
+
+5. Open a Pull Request
+
+---
+
+# 📄 License
+
+This project is licensed under the **MIT License**.
+
+---
+
+<div align="center">
+
+### ⭐ If you like this project, consider giving it a star!
+
+Built with ❤️ using React, Vite, Tailwind CSS, GSAP, Anime.js, OGL, and Lenis.
+
+</div>
