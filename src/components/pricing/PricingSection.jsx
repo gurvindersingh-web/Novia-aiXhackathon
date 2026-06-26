@@ -43,13 +43,14 @@ const PricingSection = memo(function PricingSection() {
           </div>
 
           {/* Controls */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-20">
+          <div className="flex flex-col items-center justify-center gap-6 mb-32">
+            <span className="text-white text-[17px] font-medium tracking-wide">Simple Scale.</span>
             <BillingToggle />
             <CurrencySelector />
           </div>
 
           {/* Pricing Cards Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mx-auto w-full mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mx-auto w-full mb-12 mt-12">
             {PLANS.map((plan, index) => (
               <div
                 key={plan.key}

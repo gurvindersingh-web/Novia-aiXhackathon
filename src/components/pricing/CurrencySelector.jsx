@@ -9,39 +9,38 @@ export default function CurrencySelector() {
 
   return (
     <div
-      className="relative flex items-center p-1 rounded-full border shadow-inner overflow-hidden"
+      className="relative flex items-center p-1.5 rounded-xl border"
       style={{
-        borderColor: 'rgba(255,255,255,0.08)',
-        backgroundColor: 'rgba(20, 35, 45, 0.5)',
-        backdropFilter: 'blur(20px)',
+        borderColor: 'rgba(255,255,255,0.05)',
+        backgroundColor: '#112a32',
+        width: '320px',
+        justifyContent: 'space-between'
       }}
       role="radiogroup"
       aria-label="Currency selector"
     >
       {CURRENCIES.map((key) => {
         const isSelected = currency === key;
-        const { symbol } = CURRENCY_CONFIG[key];
         return (
           <button
             key={key}
             role="radio"
             aria-checked={isSelected}
             onClick={() => changeCurrency(key)}
-            className={`relative z-10 px-4 py-2 text-sm font-semibold rounded-full transition-colors duration-300 ${isSelected ? 'text-white' : 'text-white/50 hover:text-white/80'}`}
+            className={`relative z-10 flex-1 py-2 text-[15px] font-bold rounded-lg transition-colors duration-300 ${isSelected ? 'text-[#172B36]' : 'text-white/40 hover:text-white/60'}`}
           >
             {isSelected && (
               <motion.div
-                layoutId="currency-pill"
-                className="absolute inset-0 rounded-full"
+                layoutId="currency-thumb"
+                className="absolute inset-0 rounded-lg"
                 style={{
-                  backgroundColor: 'rgba(255,255,255,0.1)',
-                  border: '1px solid rgba(255,255,255,0.1)',
-                  boxShadow: '0 4px 12px rgba(0,0,0,0.2)'
+                  backgroundColor: '#FF9932',
+                  boxShadow: '0 4px 12px rgba(255,153,50,0.3)'
                 }}
                 transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
               />
             )}
-            <span className="relative z-20">{symbol} {key}</span>
+            <span className="relative z-20">{key}</span>
           </button>
         );
       })}

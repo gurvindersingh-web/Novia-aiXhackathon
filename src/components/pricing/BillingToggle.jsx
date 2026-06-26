@@ -6,65 +6,50 @@ export default function BillingToggle() {
   const isAnnual = cycle === 'annual';
 
   return (
-    <div
-      className="relative flex items-center p-1.5 rounded-full border shadow-inner overflow-hidden"
-      style={{
-        borderColor: 'rgba(255,255,255,0.08)',
-        backgroundColor: 'rgba(20, 35, 45, 0.5)',
-        backdropFilter: 'blur(20px)',
-      }}
-      role="group"
-      aria-label="Billing cycle"
-    >
-      <button
-        onClick={() => !isAnnual || toggleCycle()}
-        className={`relative z-10 px-6 py-2.5 text-sm font-semibold rounded-full transition-colors duration-300 ${!isAnnual ? 'text-white' : 'text-white/50 hover:text-white/80'}`}
+    <div className="flex items-center gap-4">
+      <span 
+        className={`text-lg font-semibold transition-colors duration-300 ${!isAnnual ? 'text-white' : 'text-white/40'}`}
       >
-        {!isAnnual && (
-          <motion.div
-            layoutId="billing-pill"
-            className="absolute inset-0 rounded-full"
-            style={{
-              backgroundColor: 'rgba(255,255,255,0.1)',
-              border: '1px solid rgba(255,255,255,0.1)',
-              boxShadow: '0 4px 12px rgba(0,0,0,0.2)'
-            }}
-            transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
-          />
-        )}
-        <span className="relative z-20">Monthly</span>
-      </button>
+        Monthly
+      </span>
 
       <button
-        onClick={() => isAnnual || toggleCycle()}
-        className={`relative z-10 px-6 py-2.5 text-sm font-semibold rounded-full transition-colors duration-300 flex items-center gap-2 ${isAnnual ? 'text-white' : 'text-white/50 hover:text-white/80'}`}
+        onClick={toggleCycle}
+        className="relative w-[52px] h-[28px] rounded-full flex items-center px-1 transition-colors duration-300"
+        style={{
+          backgroundColor: '#112a32',
+          border: '1px solid rgba(255,255,255,0.05)',
+          boxShadow: 'inset 0 2px 4px rgba(0,0,0,0.2)'
+        }}
+        aria-label="Toggle billing cycle"
       >
-        {isAnnual && (
-          <motion.div
-            layoutId="billing-pill"
-            className="absolute inset-0 rounded-full"
-            style={{
-              backgroundColor: 'rgba(255,255,255,0.1)',
-              border: '1px solid rgba(255,255,255,0.1)',
-              boxShadow: '0 4px 12px rgba(0,0,0,0.2)'
-            }}
-            transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
-          />
-        )}
-        <span className="relative z-20 flex items-center gap-2">
-          Annual
-          <span
-            className="text-[10px] font-bold px-2 py-0.5 rounded-full"
-            style={{
-              background: 'linear-gradient(135deg, #FFC801, #FF9932)',
-              color: '#172B36',
-              boxShadow: '0 0 10px rgba(255, 153, 50, 0.4)'
-            }}
-          >
-            Save 20%
-          </span>
-        </span>
+        <motion.div
+          className="w-5 h-5 rounded-full"
+          style={{ backgroundColor: '#FF9932' }}
+          layout
+          initial={false}
+          animate={{
+            x: isAnnual ? 24 : 0
+          }}
+          transition={{
+            type: "spring",
+            stiffness: 500,
+            damping: 30
+          }}
+        />
       </button>
+
+      <span 
+        className={`text-lg font-bold transition-colors duration-300 flex items-center gap-2 ${isAnnual ? 'text-white' : 'text-white/40'}`}
+      >
+        Annually
+        <span 
+          className="text-sm"
+          style={{ color: '#FF9932' }}
+        >
+          -20%
+        </span>
+      </span>
     </div>
   );
 }
