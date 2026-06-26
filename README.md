@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🚀 Novia AI
+#  Novia AI
 
 ### One Platform. Every Data Workflow.
 
@@ -16,6 +16,8 @@ A modern AI-powered data platform with immersive UI, fluid animations, and high-
 ---
 
 ## ✨ Overview
+![Uploading image.png…]()
+
 
 **Novia AI** is a next-generation AI SaaS landing page built to showcase intelligent data platforms with premium visuals, immersive interactions, and exceptional performance.
 
