@@ -1,0 +1,52 @@
+import { useState } from 'react';
+import cubeSvgUrl from '../../assets/icons/cube-16-solid.svg';
+import PillNav from '../navbar';
+
+const NAV_ITEMS = [
+  { label: 'Features', href: '#features' },
+  { label: 'Solutions', href: '#solutions' },
+  { label: 'Pricing', href: '/pricing' },
+  { label: 'Docs', href: '#docs' },
+  { label: 'Start Free', href: '#start-free' },
+];
+
+export default function IntroNavbar({ onEnter }) {
+  const [activeHref, setActiveHref] = useState(NAV_ITEMS[0].href);
+
+  const handleNavClick = (href) => {
+    onEnter?.(href);
+  };
+
+  const rightNode = (
+    <div className="flex items-center desktop-only">
+      <a
+        href="#signin"
+        className="text-[var(--color-muted)] hover:text-[var(--color-primary)] hover:bg-[var(--color-surface-2)] transition-colors flex items-center justify-center bg-[var(--color-surface)] p-2.5 md:p-3 rounded-full border border-[var(--color-border)] shadow-sm"
+        aria-label="Profile"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+          <circle cx="12" cy="7" r="4" />
+        </svg>
+      </a>
+    </div>
+  );
+
+  return (
+    <header className="fixed top-4 left-0 right-0 z-50 transition-all duration-200 px-4">
+      <PillNav
+        logo={cubeSvgUrl}
+        logoAlt="Novia AI"
+        items={NAV_ITEMS}
+        activeHref={activeHref}
+        baseColor="rgba(23,43,54,0.4)"
+        pillColor="var(--color-surface)"
+        pillTextColor="var(--color-text)"
+        hoveredPillTextColor="var(--color-primary)"
+        className="backdrop-blur-2xl border border-[var(--color-border)] py-2.5 px-4 rounded-full mx-auto shadow-2xl bg-[#172B36]/30"
+        onItemClick={handleNavClick}
+        rightNode={rightNode}
+      />
+    </header>
+  );
+}
