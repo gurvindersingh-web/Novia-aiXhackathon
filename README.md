@@ -16,7 +16,8 @@ A modern AI-powered data platform with immersive UI, fluid animations, and high-
 ---
 
 ## ✨ Overview
-![Uploading image.png…]()
+<img width="1920" height="968" alt="image" src="https://github.com/user-attachments/assets/b41f3325-f8d7-41cb-b840-93f3639fd897" />
+
 
 
 **Novia AI** is a next-generation AI SaaS landing page built to showcase intelligent data platforms with premium visuals, immersive interactions, and exceptional performance.
